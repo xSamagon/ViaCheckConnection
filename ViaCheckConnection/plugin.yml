@@ -1,0 +1,5 @@
+main: fr.x9nico.viacheckconnection.Main
+name: ViaCheckConnection
+author: x9nico
+version: 1.0
+softdepend: [ViaVersion]
