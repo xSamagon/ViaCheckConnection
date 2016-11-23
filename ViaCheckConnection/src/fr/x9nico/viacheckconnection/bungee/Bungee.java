@@ -13,7 +13,7 @@ public class Bungee extends Plugin implements Listener{
 	
 	@Override
 	public void onEnable() {
-		System.out.println("[ViaCheckConnection] You use this plugin with BungeeCord.Don't forget to remove this plugin from spigot's plugin folder");
+		System.out.println("[ViaCheckConnection] You use this plugin with BungeeCord.Don't forget to remove this plugin from spigot's plugins folder");
 		getProxy().getPluginManager().registerListener(this, this);
 	}
 	
