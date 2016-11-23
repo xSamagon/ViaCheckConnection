@@ -13,6 +13,7 @@ public class Main extends JavaPlugin implements Listener{
 	
 	@Override
 	public void onEnable() {
+		System.out.println("[ViaCheckConnection] You using this plugin from spigot's server.");
 		getServer().getPluginManager().registerEvents(this, this);
 	}
 	
