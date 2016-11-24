@@ -15,6 +15,16 @@ public class Main extends JavaPlugin implements Listener{
 	public void onEnable() {
 		System.out.println("[ViaCheckConnection] You use this plugin from your spigot server.");
 		getServer().getPluginManager().registerEvents(this, this);
+		boolean isUpdate = Updater.checkForUpdate(this, 31805, false);
+		if(isUpdate){
+			System.out.println("[ViaCheckConnection] Update available !, updating...");
+		boolean success = Updater.download(this, 31805);
+		if(success){
+			System.out.println("[ViaCheckConnection] The plugin has been updated.Please restart your server");
+		} else {
+			System.out.println("[ViaCheckConnection] Error for update the plugin, maybe spiget or spigot down ?");
+		}
+		}
 	}
 	
 	@SuppressWarnings("unchecked")
