@@ -74,7 +74,8 @@ public class Updater {
      * @param pl The instance of your JavaPlugin
      * @param spigotResourceID @see checkForUpdate
      */
-    public static boolean download(Plugin pl, int spigotResourceID) {
+    @SuppressWarnings("resource")
+	public static boolean download(Plugin pl, int spigotResourceID) {
         File jar = new File(((JavaPlugin)pl).getClass().getProtectionDomain().getCodeSource().getLocation().getPath());
         try {
             URL url = new URL("https://api.spiget.org/v2/resources/"+spigotResourceID+"/download");
