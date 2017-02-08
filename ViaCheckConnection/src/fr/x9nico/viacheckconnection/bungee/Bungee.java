@@ -16,7 +16,7 @@ public class Bungee extends Plugin implements Listener{
 		System.out.println("[ViaCheckConnection] You use this plugin with BungeeCord.Don't forget to remove this plugin from spigot's plugins folder");
 		getProxy().getPluginManager().registerListener(this, this);
 	}
-	//
+	
 	@SuppressWarnings({ "unchecked" })
 	@EventHandler
 	public void join(ServerConnectedEvent e){
