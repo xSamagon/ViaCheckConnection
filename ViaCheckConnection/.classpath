@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="C:/Users/Nicolas/Documents/spigot-1.8.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Nicolas/Desktop/mes serveurs/BungeeCord/BungeeCord.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Nicolas/Documents/ViaVersion-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Documents/spigot-1.8.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Documents/BungeeCord.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Documents/ViaVersion-1.0.5-17w06a.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

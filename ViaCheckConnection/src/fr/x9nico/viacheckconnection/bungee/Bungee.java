@@ -37,6 +37,8 @@ public class Bungee extends Plugin implements Listener{
 			p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version"));
 		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
 			p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version"));
+		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.snapshot.getId()){
+			p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected from the server with a §b1.12§r's version"));
 		}
 	}
 
