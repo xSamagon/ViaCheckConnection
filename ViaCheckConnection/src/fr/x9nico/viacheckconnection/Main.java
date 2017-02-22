@@ -23,7 +23,7 @@ public class Main extends JavaPlugin implements Listener{
 			System.out.println("[ViaCheckConnection] The plugin has been updated.Please restart your server");
 		} else {
 			System.out.println("[ViaCheckConnection] Error for update the plugin, maybe spiget or spigot down ?");
-			System.out.println("[ViaCheckConnection] Or you are running a dev-version ?");
+			System.out.println("[ViaCheckConnection] Or maybe you are running a dev-version ?");
 		}
 		}
 	}
