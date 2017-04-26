@@ -10,7 +10,7 @@ import us.myles.ViaVersion.api.Via;
 import us.myles.ViaVersion.api.protocol.ProtocolVersion;
 
 public class Main extends JavaPlugin implements Listener{
-	
+	//
 	@Override
 	public void onEnable() {
 		System.out.println("[ViaCheckConnection] You use this plugin from your spigot server.");
