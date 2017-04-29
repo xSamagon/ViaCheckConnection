@@ -13,17 +13,17 @@ public class Main extends JavaPlugin implements Listener{
 
 	@Override
 	public void onEnable() {
-		System.out.println("[ViaCheckConnection] You use this plugin from your spigot server.");
+		getLogger().info("[ViaCheckConnection] You use this plugin from your spigot server.");
 		getServer().getPluginManager().registerEvents(this, this);
 		boolean isUpdate = Updater.checkForUpdate(this, 31805, false);
 		if(isUpdate){
-			System.out.println("[ViaCheckConnection] Update available !, updating...");
+			getLogger().info("[ViaCheckConnection] Update available !, updating...");
 		boolean success = Updater.download(this, 31805);
 		if(success){
-			System.out.println("[ViaCheckConnection] The plugin has been updated.Please restart your server");
+			getLogger().info("[ViaCheckConnection] The plugin has been updated.Please restart your server");
 		} else {
-			System.out.println("[ViaCheckConnection] Error for update the plugin, maybe spiget or spigot down ?");
-			System.out.println("[ViaCheckConnection] Or maybe you are running a dev-version ?");
+			getLogger().info("[ViaCheckConnection] Error for update the plugin, maybe spiget or spigot down ?");
+			getLogger().info("[ViaCheckConnection] Or maybe you are running a dev-version ?");
 		}
 		}
 	}
