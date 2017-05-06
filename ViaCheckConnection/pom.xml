@@ -19,4 +19,12 @@
 	<scm>
 		<developerConnection>x9nico</developerConnection>
 	</scm>
+	<organization>
+		<name>AzoltCraft</name>
+		<url>https://azoltcraft.fr</url>
+	</organization>
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/x9nico/ViaCheckConnection/issues</url>
+	</issueManagement>
 </project>
