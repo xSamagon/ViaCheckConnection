@@ -17,7 +17,7 @@ public class Main extends JavaPlugin implements Listener{
 		getServer().getPluginManager().registerEvents(this, this);
 		boolean isUpdate = Updater.checkForUpdate(this, 31805, false);
 		if(isUpdate){
-			getLogger().info("[ViaCheckConnection] Update available !, updating...");
+			getLogger().info("[ViaCheckConnection] Update available ! updating...");
 		boolean success = Updater.download(this, 31805);
 		if(success){
 			getLogger().info("[ViaCheckConnection] The plugin has been updated.Please restart your server");
