@@ -1,6 +1,6 @@
 main: fr.x9nico.viacheckconnection.Main
 name: ViaCheckConnection
 author: x9nico
-version: 1.1.5h-SNAPSHOT
+version: 1.1.5i-SNAPSHOT
 softdepend: [ViaVersion]
 description: Send a message with the name of the version you are connected from the server
