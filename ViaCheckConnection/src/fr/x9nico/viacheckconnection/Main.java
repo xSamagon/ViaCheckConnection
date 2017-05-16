@@ -32,27 +32,60 @@ public class Main extends JavaPlugin implements Listener{
 	@EventHandler
 	public void join(PlayerJoinEvent e){
 		Player p = e.getPlayer();
-		if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.8§r's version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.10§r's version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
-		}  else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.snapshot.getId()){
-			p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.12§r's snapshot version");
-		} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
-			p.sendMessage("§6[ViaCheck] §cERROR! We don't find your minecraft's version.Please report this bug !");
+		
+		if(Main.isProtocolSupport()){
+			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.8§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.10§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+			}  else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.snapshot.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.12§r's snapshot version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
+				p.sendMessage("§6[ViaCheck] §cERROR! We don't find your minecraft's version.Please report this bug !");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_1.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.7§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_6.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.7§r's version");
+			}
+		} else {
+			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.8§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.10§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+			}  else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.snapshot.getId()){
+				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.12§r's snapshot version");
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
+				p.sendMessage("§6[ViaCheck] §cERROR! We don't find your minecraft's version.Please report this bug !");
+			}
 		}
+	}
+	
+	public static boolean isProtocolSupport(){
+		return true;
 	}
 
 }
