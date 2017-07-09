@@ -1,5 +1,6 @@
 package fr.x9nico.viacheckconnection;
 
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,10 +12,14 @@ import us.myles.ViaVersion.api.protocol.ProtocolVersion;
 
 public class Main extends JavaPlugin implements Listener{
 
+	FileConfiguration config;
+	
 	@Override
 	public void onEnable() {
 		getLogger().info("[ViaCheckConnection] You use this plugin from your spigot server.");
 		getServer().getPluginManager().registerEvents(this, this);
+		getConfig().options().copyDefaults(true);
+		saveConfig();
 		boolean isUpdate = Updater.checkForUpdate(this, 31805, false);
 		if(isUpdate){
 			getLogger().info("[ViaCheckConnection] Update available ! updating...");
@@ -35,51 +40,51 @@ public class Main extends JavaPlugin implements Listener{
 		
 		if(Main.isProtocolSupport()){
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.8§r's version");
+				p.sendMessage(config.getString("v1_8".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_0".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_1".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_2".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_3".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.10§r's version");
+				p.sendMessage(config.getString("v1_10".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+				p.sendMessage(config.getString("v1_11".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+				p.sendMessage(config.getString("v1_11_1".replace("&", "§")));
 			}  else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.12§r's version");
+				p.sendMessage(config.getString("v1_12".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
-				p.sendMessage("§6[ViaCheck] §cERROR! We don't find your minecraft's version.Please report this bug !");
+				p.sendMessage(config.getString("unknown_version".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_1.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.7§r's version");
+				p.sendMessage(config.getString("v1_7_1".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_6.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.7§r's version");
+				p.sendMessage(config.getString("v1_7_6".replace("&", "§")));
 			}
 		} else {
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.8§r's version");
+				p.sendMessage(config.getString("v1_8".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_0".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_1".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_2".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.9§r's version");
+				p.sendMessage(config.getString("v1_9_3".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.10§r's version");
+				p.sendMessage(config.getString("v1_10".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+				p.sendMessage(config.getString("v1_11".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.11§r's version");
+				p.sendMessage(config.getString("v1_11_1".replace("&", "§")));
 			}  else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
-				p.sendMessage("§6[ViaCheck] §rYou are connected from the server with a §b1.12§r's version");
+				p.sendMessage(config.getString("v1_12".replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
-				p.sendMessage("§6[ViaCheck] §cERROR! We don't find your minecraft's version.Please report this bug !");
+				p.sendMessage(config.getString("unknown_version".replace("&", "§")));
 			}
 		}
 	}
