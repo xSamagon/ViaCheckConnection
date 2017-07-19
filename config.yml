@@ -1,14 +1,14 @@
 #messages for versions#
 #Get more informations for the versions at https://jd.viaversion.com/us/myles/ViaVersion/api/protocol/ProtocolVersion.html #
-v1_7_1: "&6[ViaCheck] &rYou are connected from the server with a &b1.7&r's version"
-v1_7_6: "&6[ViaCheck] &rYou are connected from the server with a &b1.7&r's version"
-v1_8: "&6[ViaCheck] &rYou are connected from the server with a &b1.8&r's version"
-v1_9_0: "&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version"
-v1_9_1: "&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version"
-v1_9_2: "&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version"
-v1_9_3: "&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version"
-v1_10: "&6[ViaCheck] &rYou are connected from the server with a &b1.10&r's version"
-v1_11: "&6[ViaCheck] &rYou are connected from the server with a &b1.11&r's version"
-v1_11_1: "&6[ViaCheck] &rYou are connected from the server with a &b1.11&r's version"
-v1_12: "&6[ViaCheck] &rYou are connected from the server with a &b1.12&r's version"
-unknown_version: "&6[ViaCheck] &cERROR! We don't find your minecraft's version.Please report this bug !"
+v1_7_1: '&6[ViaCheck] &rYou are connected from the server with a &b1.7&r's version'
+v1_7_6: '&6[ViaCheck] &rYou are connected from the server with a &b1.7&r's version'
+v1_8: '&6[ViaCheck] &rYou are connected from the server with a &b1.8&r's version'
+v1_9_0: '&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version'
+v1_9_1: '&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version'
+v1_9_2: '&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version'
+v1_9_3: '&6[ViaCheck] &rYou are connected from the server with a &b1.9&r's version'
+v1_10: '&6[ViaCheck] &rYou are connected from the server with a &b1.10&r's version'
+v1_11: '&6[ViaCheck] &rYou are connected from the server with a &b1.11&r's version'
+v1_11_1: '&6[ViaCheck] &rYou are connected from the server with a &b1.11&r's version'
+v1_12: '&6[ViaCheck] &rYou are connected from the server with a &b1.12&r's version'
+unknown_version: '&6[ViaCheck] &cERROR! We don't find your minecraft's version.Please report this bug !'
