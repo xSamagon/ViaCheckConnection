@@ -6,7 +6,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import us.myles.ViaVersion.api.Via;
 import us.myles.ViaVersion.api.protocol.ProtocolVersion;
 
@@ -37,7 +36,6 @@ public class Main extends JavaPlugin implements Listener{
 	@EventHandler
 	public void join(PlayerJoinEvent e){
 		Player p = e.getPlayer();
-		
 		if(Main.isProtocolSupport()){
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
 				p.sendMessage(getConfig().getString("v1_8").replace("&", "§"));
