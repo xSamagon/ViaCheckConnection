@@ -15,8 +15,19 @@ public class Bungee extends Plugin implements Listener{
 	
 	@Override
 	public void onEnable() {
-		getLogger().info("[ViaCheckConnection] You use this plugin with BungeeCord.Don't forget to remove this plugin from yours spigot servers");
+		getLogger().info("[ViaCheckConnection] You use this plugin with BungeeCord.Don't forget to remove this plugin from your spigot's servers");
 		getProxy().getPluginManager().registerListener(this, this);
+		boolean isUpdate = BungeeUpdater.checkForUpdate(this, 31805, false);
+		if(isUpdate){
+			getLogger().info("[ViaCheckConnection] Update available ! updating...");
+		boolean success = BungeeUpdater.download(this, 31805);
+		if(success){
+			getLogger().info("[ViaCheckConnection] The plugin has been updated.Please restart your server");
+		} else {
+			getLogger().info("[ViaCheckConnection] Error for update the plugin, maybe spiget or spigot down ?");
+			getLogger().info("[ViaCheckConnection] Or maybe you are running a dev-version ?");
+		}
+		}
 	}
 	
 	@SuppressWarnings({ "unchecked" })
