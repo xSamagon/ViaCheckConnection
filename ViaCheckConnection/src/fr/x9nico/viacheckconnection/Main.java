@@ -32,7 +32,7 @@ public class Main extends JavaPlugin implements Listener{
 		}
 		}
 		if(Bukkit.getVersion().contains("1.12") || Bukkit.getVersion().contains("1.11") || Bukkit.getVersion().contains("1.10") || Bukkit.getVersion().contains("1.9")) {
-			Bukkit.getPluginManager().enablePlugin(this);
+			getServer().getPluginManager().enablePlugin(this);
 		}
 	}
 	
