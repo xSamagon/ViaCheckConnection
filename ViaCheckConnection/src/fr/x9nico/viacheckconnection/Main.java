@@ -16,7 +16,7 @@ public class Main extends JavaPlugin implements Listener{
 	
 	@Override
 	public void onEnable() {
-		getLogger().info("[ViaCheckConnection] You use this plugin from your spigot server.");
+		getLogger().info(" [ViaCheckConnection] You use this plugin from your spigot server.");
 		getServer().getPluginManager().registerEvents(this, this);
 		getConfig().options().copyDefaults(true);
 		saveConfig();
