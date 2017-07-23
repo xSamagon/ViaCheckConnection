@@ -58,7 +58,7 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_11").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
 					p.sendMessage(getConfig().getString("v1_11_1").replace("&", "§"));
-				}  else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
+				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
 					p.sendMessage(getConfig().getString("v1_12").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
 					p.sendMessage(getConfig().getString("unknown_version").replace("&", "§"));
