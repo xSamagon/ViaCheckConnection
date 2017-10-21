@@ -1,5 +1,5 @@
 # ViaCheckConnection
-Welcome to the OpenSource of the ViaCheckConnection's plugin (https://www.spigotmc.org/resources/viacheckconnection.31805/)
+This is the source code for [ViaCheckConnection](https://www.spigotmc.org/resources/viacheckconnection.31805/)
 
 ### Issues
 If you have any bugs or need help, please open an issue in the "Issues" section
