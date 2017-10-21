@@ -66,29 +66,29 @@ public class Bungee extends Plugin implements Listener{
 			}
 		} else {
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.8Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.8§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.9§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.10Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.10§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.11Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.11§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.11Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.11§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.12Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.12§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
 				p.sendMessage(new TextComponent("§6[ViaCheck] §cERROR! We don't find your minecraft's version.Please report this bug."));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_1.getId()) {
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.12Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.12§r's version"));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_2.getId()) {
-				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.12Â§r's version"));
+				p.sendMessage(new TextComponent("§6[ViaCheck] §rYou are connected to the server with a §b1.12§r's version"));
 			}
 		}
 	}
