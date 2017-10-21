@@ -17,6 +17,7 @@ public class Main extends JavaPlugin implements Listener{
 	@Override
 	public void onEnable() {
 		getLogger().info("You are using the plugin on a Spigot server");
+		getLogger().info("Plugin version: "+getDescription().getVersion());
 		getServer().getPluginManager().registerEvents(this, this);
 		getConfig().options().copyDefaults(true);
 		saveConfig();

@@ -16,6 +16,7 @@ public class Bungee extends Plugin implements Listener{
 	@Override
 	public void onEnable() {
 		getLogger().info("You are using the plugin on a BungeeCord proxy. Don't forget to remove it from your Spigot servers.");
+		getLogger().info("Plugin version: "+getDescription().getVersion());
 		getProxy().getPluginManager().registerListener(this, this);
 		/*boolean isUpdate = BungeeUpdater.checkForUpdate(this, 31805, false);
 		if(isUpdate){
