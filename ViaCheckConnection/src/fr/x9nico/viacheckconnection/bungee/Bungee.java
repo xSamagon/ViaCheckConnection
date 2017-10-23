@@ -57,31 +57,7 @@ public class Bungee extends Plugin implements Listener{
 		            }
 		        }
 		        
-		        //If "config-version" in config.yml isn't 1.
-		        Configuration config = null;
-				try {
-					config = ConfigurationProvider.getProvider(YamlConfiguration.class).load(new File(getDataFolder(), "config.yml"));
-				} catch (IOException e3) {
-					e3.printStackTrace();
-				}
-		        if(config.getInt("config-version") != 1) {
-		        	getDataFolder().mkdir();
-					File configFile2 = new File(getDataFolder(), "config.yml");
-					try {
-						configFile2.createNewFile();
-						try (InputStream is2 = getResourceAsStream("config.yml");
-			                     OutputStream os2 = new FileOutputStream(configFile2)) {
-			                    ByteStreams.copy(is2, os2);
-			                }
-					} catch (IOException e4) {
-						throw new RuntimeException("Unable to recreate configuration file.", e4);
-					}
-					try {
-						ConfigurationProvider.getProvider(YamlConfiguration.class).load(new File(getDataFolder(), "config.yml"));
-					} catch (IOException e5) {
-						throw new RuntimeException("Unable to load configuration file.", e5);
-					}
-		        }
+		    
 		        
 		        //Loads config.
 		        try {
