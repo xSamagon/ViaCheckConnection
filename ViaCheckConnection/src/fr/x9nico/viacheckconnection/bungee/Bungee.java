@@ -57,8 +57,6 @@ public class Bungee extends Plugin implements Listener{
 		            }
 		        }
 		        
-		    
-		        
 		        //Loads config.
 		        try {
 					ConfigurationProvider.getProvider(YamlConfiguration.class).load(new File(getDataFolder(), "config.yml"));
