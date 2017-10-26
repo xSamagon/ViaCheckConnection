@@ -8,7 +8,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.md_5.bungee.api.chat.TextComponent;
 import us.myles.ViaVersion.api.Via;
 import us.myles.ViaVersion.api.protocol.ProtocolVersion;
 
