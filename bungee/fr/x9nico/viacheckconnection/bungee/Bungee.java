@@ -63,7 +63,7 @@ public class Bungee extends Plugin implements Listener{
 				} catch (IOException e2) {
 					throw new RuntimeException("Unable to load configuration file.", e2);
 				}
-
+		        new Metrics(this);
 	}
 	
 	@SuppressWarnings({ "unchecked" })
