@@ -1,5 +1,5 @@
 # You can change the plugin's messages in this config.
-# EDIT ONLY 1.7.1 and 1.7.6 IF YOU SUPPORT THIS VERSIONS !! (1.7-1.12)
+# EDIT ONLY 1.7.1 and 1.7.6 IF YOU SUPPORT THIS VERSIONS !! (1.7-1.13)
 v1_7_1: "&6[ViaCheck] &rYou are connected to the server with version &b&o1.7"
 v1_7_6: "&6[ViaCheck] &rYou are connected to the server with version &b&o1.7"
 v1_8: "&6[ViaCheck] &rYou are connected to the server with version &b&o1.8"
