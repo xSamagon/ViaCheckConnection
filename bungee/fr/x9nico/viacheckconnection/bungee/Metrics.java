@@ -254,7 +254,7 @@ public class Metrics {
     private void loadConfig() throws IOException {
         Path configPath = plugin.getDataFolder().toPath().getParent().resolve("bStats");
         configPath.toFile().mkdirs();
-        File configFile = new File(configPath.toFile(), "bstats.yml");
+        File configFile = new File(configPath.toFile(), "config.yml");
         if (!configFile.exists()) {
             writeFile(configFile,
                     "#bStats collects some data for plugin authors like how many servers are using their plugins.",
