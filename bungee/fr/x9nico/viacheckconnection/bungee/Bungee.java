@@ -73,63 +73,63 @@ public class Bungee extends Plugin implements Listener{
 		Configuration config = ConfigurationProvider.getProvider(YamlConfiguration.class).load(new File(getDataFolder(), "config.yml")); 
 		if(Bungee.isProtocolSupport()){
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_8").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_8").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9_1").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9_1").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9_2").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9_2").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9_3").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9_3").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_10").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_10").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_11").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_11").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_11_1").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_11_1").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_12").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_12").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
-				p.sendMessage(new TextComponent(config.getString("unknown_version").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("unknown_version").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_1.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_7_1").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_7_1").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_6.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_7_6").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_7_6").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_1.getId()) {
-				p.sendMessage(new TextComponent(config.getString("v1_12_1").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_12_1").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_2.getId()) {
-				p.sendMessage(new TextComponent(config.getString("v1_12_2").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_12_2").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getId()) {
-				p.sendMessage(new TextComponent(config.getString("v1_13").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_13").replace("&", "ยง")));
 			}
 		} else {
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_8").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_8").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9_1").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9_1").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9_2").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9_2").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_9_3").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_9_3").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_10").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_10").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_11").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_11").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_11_1").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_11_1").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
-				p.sendMessage(new TextComponent(config.getString("v1_12").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_12").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
-				p.sendMessage(new TextComponent(config.getString("unknown_version").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("unknown_version").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_1.getId()) {
-				p.sendMessage(new TextComponent(config.getString("v1_12_1").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_12_1").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_2.getId()) {
-				p.sendMessage(new TextComponent(config.getString("v1_12_2").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_12_2").replace("&", "ยง")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getId()) {
-				p.sendMessage(new TextComponent(config.getString("v1_13").replace("&", "ง")));
+				p.sendMessage(new TextComponent(config.getString("v1_13").replace("&", "ยง")));
 			}
 		}
 	}
