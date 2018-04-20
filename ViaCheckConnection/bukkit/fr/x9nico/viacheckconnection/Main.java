@@ -53,7 +53,7 @@ public class Main extends JavaPlugin implements Listener{
 				}
 			}
 		} else {
-			p.sendMessage(ChatColor.RED + "ERROR);
+			p.sendMessage(ChatColor.RED + "ERROR");
 		}
 	}
 	
