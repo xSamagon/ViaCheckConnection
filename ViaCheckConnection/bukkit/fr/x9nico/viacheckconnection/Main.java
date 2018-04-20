@@ -51,6 +51,8 @@ public class Main extends JavaPlugin implements Listener{
 				  p.sendMessage(getConfig().getString("message").replace("&", "§"));
 				  getConfig().replaceAll("%version%", Via.getAPI().getPlayerVersion(p));
 				}
+			else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
+-					p.sendMessage(getConfig().getString("unknown_version").replace("&", "§"));
 			}
 		} else {
 			p.sendMessage(ChatColor.RED + "ERROR");
