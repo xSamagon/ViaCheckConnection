@@ -46,22 +46,14 @@ public class Main extends JavaPlugin implements Listener{
 			
 			//I'm not sure if there was a need to get the server version. As long as the player has a version, this will send them the "message:" option in the config.
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_0.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_1.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_2.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9_3 || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11_1.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_1.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_2.getID() || Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getID()) {
-				
 				boolean pv = true;
-				
 				if(pv == true){
-					
 				  p.sendMessage(getConfig().getString("message").replace("&", "§"));
 				  getConfig().replaceAll("%version%", Via.getAPI().getPlayerVersion(p));
-					
 				}
-				
 			}
-	
 		} else {
-			
 			p.sendMessage(ChatColor.RED + "ERROR);
-			
 		}
 	}
 	
