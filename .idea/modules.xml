@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ViaCheckConnection.iml" filepath="$PROJECT_DIR$/.idea/ViaCheckConnection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViaCheck.iml" filepath="$PROJECT_DIR$/ViaCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViaCheckConnection/ViaCheckConnection.iml" filepath="$PROJECT_DIR$/ViaCheckConnection/ViaCheckConnection.iml" />
     </modules>
   </component>
 </project>
