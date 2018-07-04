@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ViaCheck:jar">
+    <output-path>$USER_HOME$/Documents</output-path>
+    <root id="archive" name="ViaCheckConnection-1.2.5o-SNAPSHOT.jar">
+      <element id="module-output" name="ViaCheckConnection" />
+      <element id="module-output" name="ViaCheck" />
+    </root>
+  </artifact>
+</component>
