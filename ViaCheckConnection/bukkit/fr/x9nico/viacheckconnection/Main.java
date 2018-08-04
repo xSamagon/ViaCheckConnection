@@ -32,7 +32,7 @@ public class Main extends JavaPlugin implements Listener{
 				getLogger().info("The plugin couldn't be updated. Either Spiget is down or you're using a dev version.");
 			}
 		}
-		if(Bukkit.getVersion().contains("1.12") || Bukkit.getVersion().contains("1.11") || Bukkit.getVersion().contains("1.10") || Bukkit.getVersion().contains("1.9")) {
+		if(Bukkit.getVersion().contains("1.12") || Bukkit.getVersion().contains("1.11") || Bukkit.getVersion().contains("1.10") || Bukkit.getVersion().contains("1.9") || Bukkit.getVersion().contains("1.13")) {
 			getServer().getPluginManager().enablePlugin(this);
 		}
 		new Metrics(this);
@@ -173,7 +173,19 @@ public class Main extends JavaPlugin implements Listener{
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w31a.getId()){
                     p.sendMessage(getConfig().getString("v18w31a").replace("&", "§"));
                 }
-			}
+			} else if(Bukkit.getVersion().contains("1.13")){
+                 if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
+                    p.sendMessage(getConfig().getString("unknown_version").replace("&", "§"));
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_1.getId()){
+                    p.sendMessage(getConfig().getString("v1_7_1").replace("&", "§"));
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_7_6.getId()) {
+                     p.sendMessage(getConfig().getString("v1_7_6").replace("&", "§"));
+                 } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getId()) {
+                    p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w31a.getId()){
+                    p.sendMessage(getConfig().getString("v18w31a").replace("&", "§"));
+                }
+            }
 		} else {
 			if(Bukkit.getVersion().contains("1.8")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
@@ -285,7 +297,19 @@ public class Main extends JavaPlugin implements Listener{
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w31a.getId()){
                     p.sendMessage(getConfig().getString("v18w31a").replace("&", "§"));
                 }
-			}
+			} else if(Bukkit.getVersion().contains("1.13")){
+                 if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()) {
+                     p.sendMessage(getConfig().getString("unknown_version").replace("&", "§"));
+                 }else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_1.getId()) {
+                    p.sendMessage(getConfig().getString("v1_12_1").replace("&", "§"));
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12_2.getId()) {
+                    p.sendMessage(getConfig().getString("v1_12_2").replace("&", "§"));
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getId()) {
+                    p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w31a.getId()){
+                    p.sendMessage(getConfig().getString("v18w31a").replace("&", "§"));
+                }
+            }
 		}
 	}
 
