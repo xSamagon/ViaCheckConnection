@@ -102,8 +102,8 @@ public class Bungee extends Plugin implements Listener{
 				p.sendMessage(new TextComponent(config.getString("v1_12_2").replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getId()) {
 				p.sendMessage(new TextComponent(config.getString("v1_13").replace("&", "§")));
-			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w31a.getId()){
-                p.sendMessage(new TextComponent(config.getString("v18w31a").replace("&", "§")));
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w32a.getId()){
+                p.sendMessage(new TextComponent(config.getString("v18w32a").replace("&", "§")));
             }
 		} else {
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
@@ -132,8 +132,8 @@ public class Bungee extends Plugin implements Listener{
 				p.sendMessage(new TextComponent(config.getString("v1_12_2").replace("&", "§")));
 			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getId()) {
 				p.sendMessage(new TextComponent(config.getString("v1_13").replace("&", "§")));
-			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w31a.getId()){
-                p.sendMessage(new TextComponent(config.getString("v18w31a").replace("&", "§")));
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v18w32a.getId()){
+                p.sendMessage(new TextComponent(config.getString("v18w32a").replace("&", "§")));
             }
 		}
 	}
