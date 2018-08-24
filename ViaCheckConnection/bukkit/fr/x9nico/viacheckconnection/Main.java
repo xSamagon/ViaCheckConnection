@@ -153,7 +153,7 @@ public class Main extends JavaPlugin implements Listener{
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13.getId()) {
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
-                    p.sendMessage(getConfig().getString("v1_13_1_pre2").replace("&", "§"));
+                    p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
                 }
 			} else if(Bukkit.getVersion().contains("1.12")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
