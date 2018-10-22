@@ -76,7 +76,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.9")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
 					p.sendMessage(getConfig().getString("v1_9_0").replace("&", "§"));
@@ -108,7 +110,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.10")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
 					p.sendMessage(getConfig().getString("v1_10").replace("&", "§"));
@@ -132,7 +136,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.11")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
 					p.sendMessage(getConfig().getString("v1_11").replace("&", "§"));
@@ -154,7 +160,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.12")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
 					p.sendMessage(getConfig().getString("v1_12").replace("&", "§"));
@@ -172,7 +180,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.13")){
                  if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()){
                     p.sendMessage(getConfig().getString("unknown_version").replace("&", "§"));
@@ -184,7 +194,9 @@ public class Main extends JavaPlugin implements Listener{
                     p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
                 } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					 p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				 }
             }
 		} else {
 			if(Bukkit.getVersion().contains("1.8")) {
@@ -216,7 +228,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.9")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_9.getId()){
 					p.sendMessage(getConfig().getString("v1_9_0").replace("&", "§"));
@@ -244,7 +258,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.10")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_10.getId()){
 					p.sendMessage(getConfig().getString("v1_10").replace("&", "§"));
@@ -264,7 +280,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.11")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_11.getId()){
 					p.sendMessage(getConfig().getString("v1_11").replace("&", "§"));
@@ -282,7 +300,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.12")) {
 				if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_12.getId()){
 					p.sendMessage(getConfig().getString("v1_12").replace("&", "§"));
@@ -296,7 +316,9 @@ public class Main extends JavaPlugin implements Listener{
 					p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
 				} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				}
 			} else if(Bukkit.getVersion().contains("1.13")){
                  if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.unknown.getId()) {
                      p.sendMessage(getConfig().getString("unknown_version").replace("&", "§"));
@@ -308,7 +330,9 @@ public class Main extends JavaPlugin implements Listener{
                     p.sendMessage(getConfig().getString("v1_13").replace("&", "§"));
                 } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_1.getId()){
                     p.sendMessage(getConfig().getString("v1_13_1").replace("&", "§"));
-                }
+                } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
+					 p.sendMessage(getConfig().getString("v1_13_2").replace("&", "§"));
+				 }
             }
 		}
 	}
