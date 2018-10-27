@@ -106,6 +106,8 @@ public class Bungee extends Plugin implements Listener{
                 p.sendMessage(new TextComponent(config.getString("v1_13_1").replace("&", "§")));
             } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
 				p.sendMessage(new TextComponent(config.getString("v1_13_2").replace("&", "§")));
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_14.getId()){
+				p.sendMessage(new TextComponent(config.getString("v1_14").replace("&", "§")));
 			}
 		} else {
 			if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_8.getId()){
@@ -138,6 +140,8 @@ public class Bungee extends Plugin implements Listener{
                 p.sendMessage(new TextComponent(config.getString("v1_13_1").replace("&", "§")));
             } else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_13_2.getId()){
 				p.sendMessage(new TextComponent(config.getString("v1_13_2").replace("&", "§")));
+			} else if(Via.getAPI().getPlayerVersion(p) == ProtocolVersion.v1_14.getId()){
+				p.sendMessage(new TextComponent(config.getString("v1_14").replace("&", "§")));
 			}
 		}
 	}
