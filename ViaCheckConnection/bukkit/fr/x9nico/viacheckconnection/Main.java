@@ -1,5 +1,6 @@
 package fr.x9nico.viacheckconnection;
 
+import fr.x9nico.viacheckconnection.commands.ViaCheckReloadCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -14,6 +15,8 @@ import us.myles.ViaVersion.api.protocol.ProtocolVersion;
 public class Main extends JavaPlugin implements Listener{
 
 	FileConfiguration config;
+	static Main instance;
+	public static Main getInstance(){return instance;}
 
 	@Override
 	public void onEnable() {
@@ -22,6 +25,8 @@ public class Main extends JavaPlugin implements Listener{
 		getServer().getPluginManager().registerEvents(this, this);
 		getConfig().options().copyDefaults(true);
 		saveConfig();
+		getCommand("viacheck").setExecutor(new ViaCheckReloadCommand());
+		instance = this;
 		boolean isUpdate = Updater.checkForUpdate(this, 31805, false);
 		if(isUpdate){
 			getLogger().info("We found a plugin update! Downloading it...");
