@@ -11,8 +11,8 @@ public class ViaCheckReloadCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String label, String[] args) {
-        Player player = (Player)commandSender;
         if(commandSender instanceof Player){
+            Player player = (Player)commandSender;
             if(command.getName().equalsIgnoreCase("viacheck")){
                 if(player.isOp() || player.hasPermission("viacheck.use")){
                     if(args.length == 0){
@@ -28,13 +28,7 @@ public class ViaCheckReloadCommand implements CommandExecutor {
             }
         } else {
             if(command.getName().equalsIgnoreCase("viacheck")){
-                    if(args.length == 0){
-                        commandSender.sendMessage(ChatColor.RED+"Usage: /viacheck <value>");
-                    } else if(args[0].equalsIgnoreCase("reload")){
-                        Main.getInstance().reloadConfig();
-                        Main.getInstance().saveConfig();
-                        commandSender.sendMessage(ChatColor.GREEN+"§aThe config file has been updated on the server! Try now!");
-                    }
+                    commandSender.sendMessage(ChatColor.RED+"You must be a Player for execute this command!");
                 }
         }
 
