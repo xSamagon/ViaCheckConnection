@@ -8,6 +8,7 @@ import java.io.OutputStream;
 
 import com.google.common.io.ByteStreams;
 
+import fr.x9nico.viacheckconnection.bungee.commands.ViaCheckCommand;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.event.ServerConnectedEvent;
@@ -29,6 +30,8 @@ public class Bungee extends Plugin implements Listener{
 		getLogger().info("You are using the plugin on a BungeeCord proxy. Don't forget to remove it from your Spigot servers.");
 		getLogger().info("Plugin version: "+getDescription().getVersion());
 		getProxy().getPluginManager().registerListener(this, this);
+		getProxy().getPluginManager().registerCommand(this, new ViaCheckCommand("viacheck"));
+		instance = this;
 		/*boolean isUpdate = BungeeUpdater.checkForUpdate(this, 31805, false);
 		if(isUpdate){
 			getLogger().info("[ViaCheckConnection] Update available ! updating...");

@@ -12,7 +12,7 @@ public class ViaCheckReloadCommand implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String label, String[] args) {
         Player player = (Player)commandSender;
         if(command.getName().equalsIgnoreCase("viacheck")){
-            if(player.isOp()){
+            if(player.isOp() || player.hasPermission("viacheck.use")){
                 if(args.length == 0){
                     player.sendMessage("§cUsage: /viacheck <value>");
                 } else if(args[0].equalsIgnoreCase("reload")){
