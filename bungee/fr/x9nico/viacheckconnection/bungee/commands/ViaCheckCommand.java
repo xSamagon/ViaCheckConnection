@@ -41,6 +41,24 @@ public class ViaCheckCommand extends Command {
                     return;
                 }
             }
+        } else {
+            if(args.length != 1){
+                commandSender.sendMessage(new TextComponent("§cUsage: /viacheck <value>"));
+                return;
+            }
+            if(args[0].equalsIgnoreCase("reload")){
+                try {
+                    Configuration configuration =
+                            ConfigurationProvider.getProvider(YamlConfiguration.class)
+                                    .load(new File(Bungee.getInstance().getDataFolder(), "config.yml"));
+                    ConfigurationProvider.getProvider(YamlConfiguration.class)
+                            .save(configuration, new File(Bungee.getInstance().getDataFolder(), "config.yml"));
+                    commandSender.sendMessage(new TextComponent("§aReloaded with success!"));
+                }catch(IOException e){
+                    e.printStackTrace();
+                }
+                return;
+            }
         }
     }
 }
